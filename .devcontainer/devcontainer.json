@@ -21,7 +21,17 @@
 				"rust-analyzer.checkOnSave.command": "clippy",
 				"rust-analyzer.linkedProjects": [
 					"./server/Cargo.toml"
-				]
+				],
+				"sqltools.connections": [{
+					"name": "Container database",
+					"driver": "PostgreSQL",
+					"previewLimit": 50,
+					"server": "localhost",
+					"port": 5432,
+					"database": "postgres",
+					"username": "postgres",
+					"password": "postgres"
+				}]
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
@@ -30,7 +40,9 @@
 				"mutantdino.resourcemonitor",
 				"rust-lang.rust-analyzer",
 				"tamasfe.even-better-toml",
-				"serayuzgur.crates"
+				"serayuzgur.crates",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-pg"
 			]
 		}
 	},
