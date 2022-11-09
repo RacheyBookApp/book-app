@@ -11,3 +11,5 @@ RUN sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-
    && wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - \
    && apt-get update \
    && apt-get -y install postgresql-client-14
+
+RUN cargo install diesel_cli --no-default-features --features postgres
