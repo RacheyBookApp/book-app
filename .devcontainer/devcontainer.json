@@ -48,7 +48,9 @@
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {}
-	}
+	},
+
+	"onCreateCommand": "sh /workspaces/book-app/.devcontainer/bootstrap.sh"
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5432],
